@@ -2,7 +2,7 @@
 
 
 
-## Kontain User Guide
+# Kontain User Guide
 
 
 ## About This Document {#about-this-document}
@@ -36,9 +36,7 @@ Kontain requires little or no change to existing CI/CD systems, orchestration co
 
 ### Linux Platform Portability {#linux-platform-portability}
 
-Kontain runs on Linux hosts that meet these minimum requirements: 
-
-
+Kontain runs on Linux hosts that meet these minimum requirements:  
 
 *   CPU: Intel or AMD  
 *   Linux kernel: Version 4.15 or higher
@@ -82,9 +80,7 @@ A Kontain VM is optimized to provide the workload with just the features it need
 
 A Kontain unikernel is the application code packaged with the Kontain runtime library. At runtime, this small, executable artifact runs in a Kontain VM. 
 
-A Kontain unikernel can be created from any application, containerized or not:
-
-
+A Kontain unikernel can be created from any application, containerized or not:  
 
 *   In many cases, Kontain can run unmodified Linux binaries as a unikernel (e.g., statically linked GO programs and applications linked for Alpine Linux). 
 *   Some application code may need to be re-linked with a Kontain runtime library so it can be run as a unikernel. 
@@ -92,9 +88,7 @@ A Kontain unikernel can be created from any application, containerized or not:
 
 Kontain runtime libraries: A Kontain runtime library provides all of the system call interfaces that are called from the application, with no unnecessary overhead. It provides a runtime environment for one instance of the application. 
 
-Krun (Kontain runtime) is an [OCI](https://opencontainers.org/) runtime used to build and run an application as a Kontain unikernel in a nested VM. 
-
-
+Krun (Kontain runtime) is an [OCI](https://opencontainers.org/) runtime used to build and run an application as a Kontain unikernel in a nested VM.  
 
 *   Krun can be invoked from Docker, Podman, and other container management tools. 
 *   Krun can also be used to run kontainers directly.
